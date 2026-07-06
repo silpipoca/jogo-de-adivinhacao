@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jogo de adivinhação v1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jogo">
+            <h1>Gatinho</h1>
+            <h2>Jogo de Adivinhação</h2>
+            <p>Tente adivinhar o número secreto escolhido pelo gato Theo!</p>
+            <p>O número está entre 1 a 10</p>
+            <input id="palpite" type="number" min="1" max="10">
+            <button id="botao" disabled>
+                Enviar seu palpite
+            </button>
+            <p id="mensagem">Boa sorte :D</p>
+            <p id="tentativas">Tentativas: 0</p>
+        </div>
+        <img src="gatinho.png" alt="">
+    </div>
+    <script src="adivinhar.js"></script>
+</body>
+</html>

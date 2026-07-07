@@ -1,49 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
-html{
-    background-color: #24a156;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body{
+html {
+    background-color: #24a156;
+    height: 100%;
+}
+
+body {
     background-color: white;
-    padding: 5%;
+    padding: 5% 20px;
     color: #24a156;
     font-size: large;
+    font-family: "Inter Tight", "Arial", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-p{
-    margin-bottom: 0;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1000px;
 }
 
-.jogo{
+.jogo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: "Arial"; 
+    width: 100%;
+    max-width: 450px;
 }
 
-h1{
+h1 {
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
     color: #24a156;
     text-decoration: underline wavy #24a156;
-    font-size: clamp(40px, 8vw, 80px);
-    margin: 0
+    font-size: clamp(35px, 8vw, 65px);
+    margin: 0;
 }
 
-h2{
-    margin-top: 1%;
+h2 {
+    margin-top: 2%;
+    margin-bottom: 0;
+    font-size: clamp(20px, 4vw, 28px);
+}
+
+p {
+    margin-top: 10px;
     margin-bottom: 0;
 }
-input{
+
+input {
     margin-top: 5%;
-    padding: 3% 2%;
-    font-size: larger;
+    padding: 12px 15px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 280px;
+    border: 1px solid #24a156;
+    border-radius: 5px;
 }
 
-button{
+button {
     font-family: "Arial";
     color: white;
     background-color: #24a156;
@@ -51,13 +81,26 @@ button{
     margin-top: 5%;
     border-radius: 5px;
     border: none;
-    padding: 1%;
+    padding: 12px 24px;
+    width: 100%;
+    max-width: 280px;
+    cursor: pointer;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+}
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    body {
+        padding: 20px 15px;
+    }
 }
